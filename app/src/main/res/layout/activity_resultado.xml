@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e8f5e9"
+    android:orientation="vertical"
+    tools:context=".ResultadoActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/imagens" />
+
+    <TextView
+        android:id="@+id/primeiraParcela"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize = "20dp"
+        android:text="1ª Parcela"
+        android:textColor="#0d47a1"
+        android:textStyle="bold"
+        android:layout_below="@id/imageView"/>
+
+
+    <TextView
+        android:id="@+id/segundaParcela"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize = "20dp"
+        android:text="2ª Parcela"
+        android:textColor="#0d47a1"
+        android:textStyle="bold"
+        android:layout_below="@id/primeiraParcela"/>
+
+    <TextView
+        android:id="@+id/terceiraParcela"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize = "20dp"
+        android:text="3ª Parcela"
+        android:textColor="#0d47a1"
+        android:textStyle="bold"
+        android:layout_below="@id/segundaParcela"/>
+
+    <Button
+        android:id="@+id/buttonDois"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center|center_vertical"
+        android:textColor="#383C70"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:onClick="voltar"
+        android:text="NOVA CONSULTA"
+        android:layout_below="@id/terceiraParcela"
+        android:background="#bbdefb"/>
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:text="LPL Sistemas 2020 - Todos os direitos Reservados"
+        android:textSize = "12dp"
+        android:textColor="#90a4ae"
+        android:layout_below="@id/buttonDois"/>
+
+    <ImageView
+        android:id="@+id/fundo"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@id/buttonDois"
+        android:layout_marginTop="110dp"
+        app:srcCompat="@drawable/fundo" />
+
+
+</RelativeLayout>

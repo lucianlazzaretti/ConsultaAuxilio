@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Auxilio Emergencial</string>
+    <string name="cpf">CPF</string>
+    <string name="NumeroCpf">Número do CPF</string>
+    <string name="dataNascimento">Data de Nascimento</string>
+    <string name="rendaMensal">Informe Sua renda mensal</string>
+    <string name="dataPagamento">Data do Pagamento</string>
+    <string name="saldoReceber">Saldo a Receber</string>
+</resources>

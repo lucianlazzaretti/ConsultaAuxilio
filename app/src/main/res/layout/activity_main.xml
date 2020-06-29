@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8f5e9"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/imagens" />
+
+    <TextView
+        android:id="@+id/cpf"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/cpf"
+        android:textSize = "20dp"
+        android:textColor="#0d47a1"
+        android:textStyle="bold"
+        android:layout_below="@id/imageView"/>
+
+    <EditText
+        android:id="@+id/edCpf"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:hint="@string/NumeroCpf"
+        android:textColorHint="#90a4ae"
+        android:textColor="#0d47a1"
+        android:layout_below="@id/cpf"/>
+
+    <TextView
+        android:id="@+id/dataNascimento"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/dataNascimento"
+        android:textSize = "20dp"
+        android:textColor="#0d47a1"
+        android:textStyle="bold"
+        android:layout_below="@id/edCpf"/>
+
+    <EditText
+        android:id="@+id/edDataNascimento"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="date"
+        android:hint="@string/dataNascimento"
+        android:textColorHint="#90a4ae"
+        android:textColor="#0d47a1"
+        android:layout_below="@id/dataNascimento"/>
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center|center_vertical"
+        android:textColor="#383C70"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:onClick="validar"
+        android:text="CONSULTAR"
+        android:layout_below="@id/edDataNascimento"
+        android:background="#bbdefb"/>
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:text="LPL Sistemas 2020 - Todos os direitos Reservados"
+        android:textSize = "12dp"
+        android:textColor="#90a4ae"
+        android:layout_below="@id/button"/>
+
+    <ImageView
+        android:id="@+id/fundo"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@id/button"
+        android:layout_marginTop="110dp"
+        app:srcCompat="@drawable/fundo" />
+
+
+</RelativeLayout>
